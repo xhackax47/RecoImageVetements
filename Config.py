@@ -17,8 +17,8 @@ def chargement():
     """Chargement et traitement des données du dataset Fashion MNIST"""
     fashion_mnist = tf.keras.datasets.fashion_mnist
     
-    (images_train, targets_train), (images_test, targets_test) = tf.keras.datasets.fashion_mnist.load_data()
+    (entrainement_images, entrainement_cibles), (test_images, test_cibles) = tf.keras.datasets.fashion_mnist.load_data()
     
-    print(images_train.shape)
-    print(targets_train.shape)
-    plt.imshow(images_train[15000]) # affiche la 15000eme image
+    print(entrainement_images.shape)
+    print(entrainement_cibles.shape)
+    plt.imshow(entrainement_images[15000]) # affiche la 15000eme image
